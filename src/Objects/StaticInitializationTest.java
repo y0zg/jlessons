@@ -11,3 +11,9 @@ public class StaticInitializationTest {
 		System.out.println("main method");
 	}
 }
+
+//		Initialization occurs just before the main method is executed.
+//		However, before the specified class can be initialized, its parent class will have to be initialized.
+//		If the parent class has not been loaded and linked, the JVM will first load and link the parent class.
+//		Again, when the parent class is about to be initialized, the parent’s parent will be treated the same.
+//		This process occurs recursively until the initialized class is the topmost class in the hierarchy.
