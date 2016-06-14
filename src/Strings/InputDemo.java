@@ -19,5 +19,7 @@ public class InputDemo {
 		InputDemo demo = new InputDemo();
 		String input = demo.getUserInput();
 		System.out.println(input);
+
+
 	}
 }
