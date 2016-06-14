@@ -24,12 +24,6 @@ public class CompareString {
 		int num2=Integer.parseInt(s3);
 		System.out.println(num2);
 
-		//Every time the JVM creates an object,
-		// it also creates a java.lang.Class object that describes the type of the object.
-
-		Class myClass=s3.getClass();
-		System.out.println(myClass); //class java.lang.String
-
 		//valueOf
 
 		double d = 102939939.939;
