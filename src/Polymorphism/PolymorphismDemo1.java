@@ -28,7 +28,7 @@ public class PolymorphismDemo1 {
 		man.manage(); //managing...
 
 /*After seeing the code, you might ask, why would you declare employee as Employee
-in the first place? Why didn’t you declare employee as type Manager, such as this?
+ in the first place? Why didn’t you declare employee as type Manager, such as this?
 Manager employee;
 employee = new Manager();
 You do this to ensure flexibility in cases where you don’t know whether the
