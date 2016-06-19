@@ -1,4 +1,4 @@
-package Enum1;
+package EnumSwitch;
 
 /**
  * Created by webstddesign on 6/19/2016.

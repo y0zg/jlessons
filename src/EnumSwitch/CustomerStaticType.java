@@ -1,4 +1,4 @@
-package Enum1;
+package EnumSwitch;
 
 public class CustomerStaticType {
 	public static final int INDIVIDUAL = 1;

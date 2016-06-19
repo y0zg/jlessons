@@ -1,4 +1,4 @@
-package Enum1;
+package EnumSwitch;
 
 public class CustomerTest {
 	public CustomerType custType;
