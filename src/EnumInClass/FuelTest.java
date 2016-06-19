@@ -16,9 +16,9 @@ package EnumInClass;
 			return (double) miles + mpg;
 		}
 
-		public String getName() {
-			return this.name;
-		}
+//		public String getName() {
+//			return this.name;
+//		}
 
 	}
 
