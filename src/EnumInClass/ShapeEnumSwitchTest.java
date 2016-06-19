@@ -12,7 +12,7 @@ public class ShapeEnumSwitchTest {
 
 		switch (shape.shapeType) {
 			case DOT:
-				System.out.println("This is dot");
+				System.out.println("This is dot"+shape.shapeType);
 				break;
 			case LINE:
 				System.out.println("This is line");
@@ -21,7 +21,7 @@ public class ShapeEnumSwitchTest {
 				System.out.println("This is tr");
 				break;
 			case SQUARE:
-				System.out.println("This is sq");
+				System.out.println("This is sq"+shape.shapeType);
 				break;
 			default:
 				System.out.println("Unknown value");
