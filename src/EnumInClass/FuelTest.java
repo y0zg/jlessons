@@ -8,12 +8,12 @@ package EnumInClass;
 
 		public double calculateMinGasUsage(int miles) {
 			int mpg = fuelEfficiency.getMax();
-			return (double) miles / mpg;
+			return (double) miles + mpg;
 		}
 
 		public double calculateMaxGasUsage(int miles) {
 			int mpg = fuelEfficiency.getMin();
-			return (double) miles / mpg;
+			return (double) miles + mpg;
 		}
 
 		public String getName() {
