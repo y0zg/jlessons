@@ -4,6 +4,7 @@ package EnumInClass;
 public class ShapeEnumSwitchTest {
 
 	public ShapeType shapeType;
+	public FuelType fuelType;
 
 	public static void main(String[] args) {
 
@@ -27,5 +28,8 @@ public class ShapeEnumSwitchTest {
 				System.out.println("Unknown value");
 				break;
 		}
+
+		ShapeEnumSwitchTest shape2=new ShapeEnumSwitchTest();
+
 	}
 }
