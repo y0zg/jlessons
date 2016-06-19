@@ -15,9 +15,7 @@ public class Shape {
 			System.out.println(enums);
 		}
 
-
 		Shape shape = new Shape();
-
 
 		String st = "Enter Shape corners";
 		while (true) {

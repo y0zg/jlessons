@@ -1,15 +1,15 @@
 package Enum1;
 
-public class Customer {
+public class CustomerTest {
 	public CustomerType custType;
 	public static void main(String[] args) {
-		Customer cust=new Customer();
+		CustomerTest cust=new CustomerTest();
 		cust.custType=CustomerType.INDIVIDUAL;
 
 		System.out.println(cust);
 		System.out.println(cust.custType);
 
-		Customer cust2=new Customer();
+		CustomerTest cust2=new CustomerTest();
 		cust2.custType=CustomerType.ORGANIZATION;
 		System.out.println(cust2);
 		System.out.println(cust2.custType);
