@@ -1,5 +1,7 @@
 package DateAndTime;
 
+//A ZonedDateTime is always immutable and the time component is stored to nanosecond precision.
+
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;

@@ -1,5 +1,6 @@
 package DateAndTime;
-
+//LocalDateTime offers various static methods to create a date-time.
+//The method now comes with three overrides and return the current date-time
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
