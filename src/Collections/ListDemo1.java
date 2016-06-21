@@ -31,7 +31,7 @@ public class ListDemo1 {
 					list2.lastIndexOf(obj2) +
 					":" +
 					obj2);
-//List allows duplicate elements. By contrast, Set does not.
+//	List allows duplicate elements. By contrast, Set does not.
 //	the java.util.Collections class is a helper or utility class
 // that provides static methods for manipulating Lists and other Collections.
 			List list3 = Arrays.asList(100, -5, 4, 1, 20);
@@ -60,6 +60,16 @@ public class ListDemo1 {
 			for (Iterator iterator3 = list3.iterator(); iterator3.hasNext(); ) {
 				Integer element = (Integer) iterator3.next();
 				System.out.println(element);
+			}
+
+//HashSet
+			Set set = new HashSet();
+			set.add("Hello");
+			if (set.add("Hello")) {
+				System.out.println("addition successful");
+			} else {
+				System.out.println("addition failed");
+//Queue and LinkedList
 			}
 		}
 	}
