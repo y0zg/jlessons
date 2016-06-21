@@ -1,10 +1,7 @@
 package Collections;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class ListDemo1 {
 
@@ -39,10 +36,31 @@ public class ListDemo1 {
 // that provides static methods for manipulating Lists and other Collections.
 			List list3 = Arrays.asList(100, -5, 4, 1, 20);
 			Collections.sort(list3);
+			System.out.println("\nExample 1");
 			for (Object i : list3) {
 				System.out.println("i = " + i);
 			}
+			System.out.println("\nExample 2");
 
+			Iterator iterator1 = list3.iterator();
+			while (iterator1.hasNext()) {
+				Integer element = (Integer) iterator1.next();
+				System.out.println(element);
+			}
+
+			System.out.println("\nExample 3");
+
+			for (Iterator iterator2 = list3.iterator(); iterator2.hasNext(); ) {
+				Integer element = (Integer) iterator2.next();
+				System.out.println(element);
+			}
+
+			System.out.println("\nExample 4");
+
+			for (Iterator iterator3 = list3.iterator(); iterator3.hasNext(); ) {
+				Integer element = (Integer) iterator3.next();
+				System.out.println(element);
+			}
 		}
 	}
 }
