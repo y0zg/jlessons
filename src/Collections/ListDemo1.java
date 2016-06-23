@@ -63,13 +63,50 @@ public class ListDemo1 {
 			}
 
 //HashSet
-			Set set = new HashSet();
-			set.add("Hello");
-			if (set.add("Hello")) {
+			Set set1 = new HashSet();
+			set1.add("Hello");
+			if (set1.add("Hello")) {
 				System.out.println("addition successful");
 			} else {
 				System.out.println("addition failed");
 //Queue and LinkedList
+
+
+				Queue q1 = new LinkedList();
+				q1.add("one1");
+				q1.add("two2");
+				q1.add("three3");
+				System.out.println(q1.remove());
+				System.out.println(q1.remove());
+				System.out.println(q1.remove());
+//Collection implementations normally have a constructor that accepts a Collection object.
+// This enables you to convert a Collection to a different type of Collection.
+//				converts a Queue to a List
+				System.out.println("ll1 converted and new values:");
+				List<String> ll1 = new ArrayList<>(q1); //Queue to List
+				ll1.add("A");
+				for (String o1 : ll1) {
+					System.out.println("value: " + o1);
+				}
+				System.out.println();
+
+				System.out.println("ll2 converted and new values:");
+				List<String> ll2 = new ArrayList<>(set1); //Set to List
+				ll2.add("setA");
+				for (String o1 : ll2) {
+					System.out.println("value: " + o1);
+				}
+
+				System.out.println();
+				List<String> items = new ArrayList<>();
+				items.add("A");
+				items.add("B");
+				items.add("C");
+
+
+				for (String item : items) {
+					System.out.println(item);
+				}
 			}
 		}
 	}
