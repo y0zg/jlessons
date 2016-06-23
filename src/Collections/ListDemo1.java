@@ -84,6 +84,7 @@ public class ListDemo1 {
 //				converts a Queue to a List
 				System.out.println("ll1 converted and new values:");
 				List<String> ll1 = new ArrayList<>(q1); //Queue to List
+//Queue doesn't have Iterator<E> iterator() interface
 				ll1.add("A");
 				for (String o1 : ll1) {
 					System.out.println("value: " + o1);
