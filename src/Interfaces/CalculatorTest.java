@@ -14,7 +14,7 @@ public class CalculatorTest implements Calculator {
 	}
 
 	@Override
-	public long multuiply(int a, int b) {
+	public long multiply(int a, int b) {
 		return a*b;
 	}
 
