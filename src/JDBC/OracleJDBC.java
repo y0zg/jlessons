@@ -27,7 +27,7 @@ public class OracleJDBC {
 
 			con = DriverManager.getConnection(
 					"jdbc:oracle:thin:@localhost:1521:xe", "user1",
-					"4rs4by5");
+					"qweqwe");
 
 		} catch (SQLException e) {
 
