@@ -6,7 +6,7 @@ public class JavaDBDemo1 {
 	private static String dbUrl = "jdbc:oracle:thin:@localhost:1521:xe";
 
 	private static final String CREATE_TABLE_SQL =
-			"CREATE TABLE person "
+			"CREATE TABLE person1 "
 					+ "(person_id INT, name VARCHAR(100))";
 
 	public void createTable() {
@@ -22,12 +22,13 @@ public class JavaDBDemo1 {
 	}
 
 	private static final String INSERT_DATA_SQL =
-			"INSERT INTO person (person_id, name) "
+			"INSERT INTO person1 (person_id, name) "
 					+ "VALUES (?, ?)";
 
 	public void insertData(int id, String name) {
 		try (Connection connection =
-					 DriverManager.getConnection(dbUrl);
+					 DriverManager.getConnection(dbUrl,"user1",
+							 "qweqwe");
 			 PreparedStatement pStatement =
 					 connection.prepareStatement(
 							 INSERT_DATA_SQL);) {
@@ -40,11 +41,12 @@ public class JavaDBDemo1 {
 	}
 
 	private static final String READ_DATA_SQL =
-			"SELECT person_id, name FROM person";
+			"SELECT person_id, name FROM person1";
 
 	public void readData() {
 		try (Connection connection =
-					 DriverManager.getConnection(dbUrl);
+					 DriverManager.getConnection(dbUrl,"user1",
+							 "qweqwe");
 			 PreparedStatement pStatement =
 					 connection.prepareStatement(READ_DATA_SQL);
 			 ResultSet resultSet = pStatement.executeQuery()) {
@@ -58,9 +60,22 @@ public class JavaDBDemo1 {
 
 	public static void main(String[] args) {
 		// must add derby.jar to classpath
+		try {
+
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+
+		} catch (ClassNotFoundException e) {
+
+			System.out.println("Where is your Oracle JDBC Driver?");
+			e.printStackTrace();
+			return;
+
+		}
+
+		System.out.println("Oracle JDBC Driver Registered!");
 		JavaDBDemo1 demo = new JavaDBDemo1();
 		demo.createTable();
-		demo.insertData(2, "Alvin Average");
+		demo.insertData(1, "Alvin Average");
 		demo.readData();
 	}
 
