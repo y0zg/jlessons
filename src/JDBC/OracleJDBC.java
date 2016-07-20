@@ -43,15 +43,23 @@ public class OracleJDBC {
 			System.out.println("Failed to make connection!");
 		}
 		//step3 create the statement object
-		Statement stmt=con.createStatement();
+
+			Statement stmt = con.createStatement();
 
 //step4 execute query
-		ResultSet rs=stmt.executeQuery("select * from dept");
-		while(rs.next())
-			System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));
+			ResultSet rs1 = stmt.executeQuery("select * from dept");
+
+
+			while (rs1.next())
+				System.out.println(rs1.getInt(1) + "  " + rs1.getString(2) + "  " + rs1.getString(3));
 
 //step5 close the connection object
 		con.close();
 	}
 
 }
+
+//	The executeUpdate method executes an SQL INSERT, UPDATE, or DELETE statement as well as
+// data definition language (DDL) statements to create, drop, and alter tables.
+// This method returns the row count for INSERT, UPDATE, or DELETE statements or
+// returns 0 for SQL statements that return nothing.
