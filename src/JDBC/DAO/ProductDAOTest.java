@@ -38,8 +38,9 @@ public class ProductDAOTest {
 			e.printStackTrace();
 		}
 
-		createDatabase();
+		//createDatabase();
 		Product product = new Product();
+		product.setId(1);
 		product.setName("Kiano tablet keyboard");
 		product.setDescription("Low cost tablet keyboard, "
 				+ "compatible will all Android devices");

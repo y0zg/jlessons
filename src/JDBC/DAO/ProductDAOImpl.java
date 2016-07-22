@@ -21,6 +21,7 @@ public class ProductDAOImpl extends BaseDAO
 			 ResultSet resultSet = pStatement.executeQuery()) {
 			while (resultSet.next()) {
 				Product product = new Product();
+				product.setId(resultSet.getInt("id"));
 				product.setName(resultSet.getString("name"));
 				product.setDescription(
 						resultSet.getString("description"));
@@ -43,9 +44,10 @@ public class ProductDAOImpl extends BaseDAO
 		try (Connection connection = getConnection();
 			 PreparedStatement pStatement = connection
 					 .prepareStatement(INSERT_PRODUCT_SQL);) {
-			pStatement.setString(1, product.getName());
-			pStatement.setString(2, product.getDescription());
-			pStatement.setBigDecimal(3, product.getPrice());
+			pStatement.setInt(1, product.getId());
+			pStatement.setString(2, product.getName());
+			pStatement.setString(3, product.getDescription());
+			pStatement.setBigDecimal(4, product.getPrice());
 			pStatement.execute();
 		} catch (SQLException e) {
 			throw new DAOException(
