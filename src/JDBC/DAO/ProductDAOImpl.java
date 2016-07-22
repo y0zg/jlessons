@@ -11,7 +11,7 @@ public class ProductDAOImpl extends BaseDAO
 		implements ProductDAO {
 
 	private static final String GET_PRODUCTS_SQL =
-			"SELECT name, description, price FROM products";
+			"SELECT id, name, description, price FROM products";
 
 	public List<Product> getProducts() throws DAOException {
 		List<Product> products = new ArrayList<Product>();
@@ -38,7 +38,7 @@ public class ProductDAOImpl extends BaseDAO
 
 	private static final String INSERT_PRODUCT_SQL =
 			"INSERT INTO products "
-					+ "(name, description, price) " + "VALUES (?, ?, ?)";
+					+ "(id, name, description, price) " + "VALUES (?, ?, ?, ?)";
 
 	public void insert(Product product) throws DAOException {
 		try (Connection connection = getConnection();

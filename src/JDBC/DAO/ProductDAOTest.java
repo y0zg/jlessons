@@ -40,10 +40,9 @@ public class ProductDAOTest {
 
 		//createDatabase();
 		Product product = new Product();
-		product.setId(1);
-		product.setName("Kiano tablet keyboard");
-		product.setDescription("Low cost tablet keyboard, "
-				+ "compatible will all Android devices");
+		product.setId(2);
+		product.setName("Kiano tablet");
+		product.setDescription("Low cost tablet");
 		product.setPrice(new BigDecimal(24.95));
 
 		ProductDAO productDAO = new ProductDAOImpl();
