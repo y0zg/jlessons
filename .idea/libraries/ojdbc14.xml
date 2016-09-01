@@ -3,9 +3,11 @@
     <CLASSES>
       <root url="jar://C:/Program Files/Java/jdk1.8.0_51/lib/ojdbc14.jar!/" />
       <root url="file://C:/Program Files/Java/jdk1.8.0_51/lib/poi-3.14" />
+      <root url="jar://C:/Program Files/Java/jdk1.8.0_51/lib/xmlbeans-2.6.0.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="file://C:/Program Files/Java/jdk1.8.0_51/lib/poi-3.14/docs/apidocs" />
+      <root url="file://C:/Program Files/Java/jdk1.8.0_51/lib/xmlbeans-1.0.3/docs/reference" />
     </JAVADOC>
     <SOURCES />
     <jarDirectory url="file://C:/Program Files/Java/jdk1.8.0_51/lib/poi-3.14" recursive="false" />

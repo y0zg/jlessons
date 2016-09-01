@@ -1,18 +1,16 @@
 package ApachePOI.XSSF;
-
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileOutputStream;
-
 /**
  * How to shift rows up or down
  */
 public class ShiftRows {
 
-	public static void main(String[]args) throws Exception {
+	public static void main(String[] args) throws Exception {
 		Workbook wb = new XSSFWorkbook();   //or new HSSFWorkbook();
 		Sheet sheet = wb.createSheet("Sheet1");
 
@@ -39,3 +37,4 @@ public class ShiftRows {
 		fileOut.close();
 
 	}
+}
