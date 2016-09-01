@@ -2,8 +2,12 @@
   <library name="ojdbc14">
     <CLASSES>
       <root url="jar://C:/Program Files/Java/jdk1.8.0_51/lib/ojdbc14.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk1.8.0_51/lib/poi-3.14" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="file://C:/Program Files/Java/jdk1.8.0_51/lib/poi-3.14/docs/apidocs" />
+    </JAVADOC>
     <SOURCES />
+    <jarDirectory url="file://C:/Program Files/Java/jdk1.8.0_51/lib/poi-3.14" recursive="false" />
   </library>
 </component>
